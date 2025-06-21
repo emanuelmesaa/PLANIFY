@@ -69,8 +69,7 @@ function ProyectosPage() {
     } else if (proyectoId === undefined && editingProjectData) { 
       resetProjectForm(); 
     } 
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [proyectoId, resetProjectForm]); // 'proyectos' y 'editingProjectData' se quitaron para evitar bucles; la lógica de carga inicial y listeners se encarga.
+  }, [proyectoId, resetProjectForm]);
 
   useEffect(() => { 
     localStorage.setItem('proyectos', JSON.stringify(proyectos)); 

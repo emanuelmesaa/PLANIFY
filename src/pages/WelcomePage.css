@@ -17,7 +17,7 @@
     opacity: 0;
   }
   to {
-    transform: translateX(-40%) rotate(15deg); /* Ajusta este translateX para cuánto se asoma */
+    transform: translateX(-40%) rotate(15deg);
     opacity: 1;
   }
 }
@@ -27,29 +27,27 @@
   margin: 0;
   font-family: 'Roboto', sans-serif;
   min-height: 100vh;
-  /* Gradiente de fondo más vivo y dinámico */
-  background: linear-gradient(135deg, #fde047 0%, #bada55 50%, #6ee7b7 100%); /* Amarillo -> Verde Lima -> Menta */
+  background: linear-gradient(135deg, #fde047 0%, #bada55 50%, #6ee7b7 100%); 
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 2rem;
   box-sizing: border-box;
-  position: relative; /* Para posicionar a Roco */
-  overflow: hidden; /* Para que Roco no cause scroll si se sale un poco */
+  position: relative; 
+  overflow: hidden; 
 }
 
 .welcome-main-container {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center; /* Centrar el contenido si no ocupa todo el ancho */
-  gap: 3rem; /* Más espacio entre las secciones */
+  justify-content: center;
+  gap: 3rem; 
   width: 100%;
-  max-width: 1100px; /* Un poco menos ancho para que no se estire tanto */
-  z-index: 1; /* Para que esté sobre Roco si Roco tiene z-index negativo */
+  max-width: 1100px; 
+  z-index: 1;
 }
 
-/* Sección de Introducción (Izquierda/Arriba) */
 .welcome-intro-section {
   flex: 1;
   min-width: 320px;
@@ -63,25 +61,25 @@
   width: 350px; 
   max-width: 90%;
   height: auto;
-  margin-bottom: 2rem; /* Más espacio */
-  filter: drop-shadow(0 4px 8px rgba(0,0,0,0.15)); /* Sombra sutil al logo */
+  margin-bottom: 2rem;
+  filter: drop-shadow(0 4px 8px rgba(0,0,0,0.15)); 
 }
 
 .welcome-text-content h1 {
   font-size: 2.5rem; 
   font-weight: 700;
-  color: #2c3e50; /* Un azul marino oscuro para el texto principal */
+  color: #2c3e50;
   margin-bottom: 1.25rem;
   line-height: 1.3;
-  text-shadow: 1px 1px 2px rgba(0,0,0,0.1); /* Sombra de texto sutil */
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1); 
 }
 .welcome-text-content h1 span[role="img"] {
-    font-size: 2.8rem; /* Emojis un poco más grandes */
+    font-size: 2.8rem; 
 }
 
 .welcome-text-content p {
   font-size: 1.25rem;
-  color: #34495e; /* Azul grisáceo */
+  color: #34495e;
   line-height: 1.8;
 }
 

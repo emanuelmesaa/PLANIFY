@@ -1,9 +1,7 @@
-// src/pages/PremiumDashboardPage.jsx
 import React, { useState, useEffect, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import './PremiumDashboardPage.css'; 
-// import Swal from 'sweetalert2'; // Descomentar si se vuelve a añadir la notificación con SweetAlert
 
 function PremiumDashboardPage() {
   const navigate = useNavigate();
@@ -17,7 +15,7 @@ function PremiumDashboardPage() {
   const [upcomingDeadlinesCount, setUpcomingDeadlinesCount] = useState(0);
 
   // useEffect para la notificación premium (si se decide re-implementar)
-  /*
+  
   useEffect(() => {
     const premiumNotificationShown = sessionStorage.getItem('premiumNotificationShown');
     if (localStorage.getItem('userPlan') === 'premium') {
@@ -36,7 +34,7 @@ function PremiumDashboardPage() {
       }
     }
   }, []);
-  */
+
 
   const loadAndProcessProjects = useCallback(() => {
     const loadedProjects = JSON.parse(localStorage.getItem('proyectos')) || [];
@@ -148,7 +146,7 @@ function PremiumDashboardPage() {
                       <td>
                         <button 
                             onClick={() => navigateToProjectDetails(index)} 
-                            className="edit-button-premium" // Asegúrate que esta clase exista en PremiumDashboardPage.css
+                            className="edit-button-premium" 
                         >
                             Editar Detalles
                         </button>

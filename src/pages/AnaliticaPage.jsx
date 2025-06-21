@@ -1,4 +1,3 @@
-// src/pages/AnaliticaPage.jsx
 import React, { useState, useEffect } from 'react';
 import Navbar from '../components/Navbar';
 import './AnaliticaPage.css'; 
@@ -19,7 +18,6 @@ function AnaliticaPage() {
     };
   }, []);
 
-  // Nombres exactos de tus archivos de imagen en public/img/
   const imgResponsables = "/img/5 responsables con mas tareas.png";
   const imgDistFechas = "/img/Distribución de fechas de entrega.png";
   const imgDistPorcentual = "/img/Distribución porcentual de tareas.png";

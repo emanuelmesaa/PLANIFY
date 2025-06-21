@@ -3,8 +3,6 @@ import React, { useState, useEffect } from 'react';
 import { NavLink, Link } from 'react-router-dom';
 import './Navbar.css'; 
 
-// Asegúrate que estas rutas de imagen sean correctas y los archivos existan en public/img/
-// o en la subcarpeta correcta dentro de public/
 const logoNormalAsset = "/img/PLANify with rocco.png"; 
 const logoPremiumAsset = "/img/PLANify with rocco black.png"; 
 
@@ -16,19 +14,16 @@ const Navbar = () => {
       setIsPremiumUser(localStorage.getItem('userPlan') === 'premium');
     };
     
-    // Comprobar estado al montar el componente
     handlePlanChange(); 
 
-    // Escuchar eventos para cambios de plan o storage
     window.addEventListener('userPlanChanged', handlePlanChange);
-    window.addEventListener('storage', handlePlanChange); // Para cambios en otras pestañas
+    window.addEventListener('storage', handlePlanChange);
 
-    // Limpiar listeners cuando el componente se desmonta
     return () => {
       window.removeEventListener('userPlanChanged', handlePlanChange);
       window.removeEventListener('storage', handlePlanChange);
     };
-  }, []); // El array vacío asegura que este efecto se ejecute solo al montar y desmontar
+  }, []);
 
   const displayLogo = isPremiumUser ? logoPremiumAsset : logoNormalAsset;
   const homeLink = isPremiumUser ? "/premium" : "/"; 
@@ -66,7 +61,7 @@ const Navbar = () => {
             >
               Calendario
             </NavLink>
-            {/* Mostrar "Planes" solo si NO es premium */}
+            {}
             {!isPremiumUser && (
               <NavLink 
                 to="/planes" 
@@ -85,10 +80,8 @@ const Navbar = () => {
               to="/login" 
               className="navbar-link navbar-link-logout"
               onClick={() => {
-                // Limpiar estado premium y usuario actual al cerrar sesión
                 localStorage.removeItem('userPlan');
                 localStorage.removeItem('currentUserEmail'); 
-                // Notificar a otros componentes (como esta misma Navbar) del cambio
                 window.dispatchEvent(new CustomEvent('userPlanChanged')); 
               }}
             >

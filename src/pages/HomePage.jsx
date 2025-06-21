@@ -1,4 +1,3 @@
-// src/pages/HomePage.jsx
 import React, { useState, useEffect, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Navbar from '../components/Navbar';
@@ -62,11 +61,10 @@ function HomePage() {
   const handleAddProjectClick = () => navigate('/proyectos'); 
   const navigateToProjectDetails = (index) => navigate(`/proyectos/${index}`); 
   
-  // const isUserPremium = localStorage.getItem('userPlan') === 'premium'; // No se usa directamente en este JSX, Navbar lo maneja
 
   return (
       <>
-      <Navbar /> {/* Navbar maneja su propio estado premium */}
+      <Navbar /> {}
       <main className="homepage-main-content">
           <div className="homepage-container">
             <section id="dashboard" className="content-section">

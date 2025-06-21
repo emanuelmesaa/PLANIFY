@@ -1,14 +1,13 @@
-// src/pages/PremiumPage.jsx
-import React, { useState, useEffect, useCallback } from 'react'; // useCallback añadido para consistencia
+import React, { useState, useEffect, useCallback } from 'react';
 import { useNavigate } from "react-router-dom";
 import Navbar from "../components/Navbar"; 
-import Footer from "../components/Footer"; // Asumiendo que tienes este componente
+import Footer from "../components/Footer"; 
 import "./PremiumPage.css"; 
 
 const PremiumPage = () => {
   const [totalProyectos, setTotalProyectos] = useState(0);
-  const [totalTareas, setTotalTareas] = useState(0); // Inicializado a 0, se calculará
-  const [fechasProximas, setFechasProximas] = useState(0); // Inicializado a 0, se calculará
+  const [totalTareas, setTotalTareas] = useState(0);
+  const [fechasProximas, setFechasProximas] = useState(0);
   const [proyectos, setProyectos] = useState([]);
   const navigate = useNavigate();
 
@@ -46,7 +45,7 @@ const PremiumPage = () => {
 
 
   useEffect(() => {
-    loadAndProcessData(); // Carga inicial
+    loadAndProcessData(); 
     
     window.addEventListener('storage', loadAndProcessData);
     window.addEventListener('focus', loadAndProcessData);

@@ -1,4 +1,3 @@
-/* src/pages/LoginPage.css */
 
 .login-page-body-bg {
   background-image: url("/img/inicio.jpg"); 
@@ -77,13 +76,11 @@
 
 .login-container,
 .register-container {
-  position: absolute; /* Controlado por renderizado condicional en JSX */
+  position: absolute;
   width: 100%; 
   padding: 0 20px; 
   display: flex;
   flex-direction: column;
-  /* Las transiciones de left/right/opacity ya no son necesarias con renderizado condicional de React */
-  /* transition: left .5s ease-in-out, right .5s ease-in-out, opacity .5s ease-in-out; */
 }
 
 .form-top-text span { 
@@ -131,17 +128,16 @@
   color: #fff;
   height: 50px;
   width: 100%;
-  padding: 0 15px 0 45px; /* Asume ícono a la izquierda */
+  padding: 0 15px 0 45px; 
   border: none;
   border-radius: 30px;
   outline: none;
   transition: .2s ease;
 }
 
-/* Ajuste para cuando hay ícono de candado a la izquierda Y ojo a la derecha */
 .password-input-container .input-field {
-  padding-left: 45px; /* Para el ícono de candado */
-  padding-right: 45px; /* Para el ícono del ojo */
+  padding-left: 45px;
+  padding-right: 45px;
 }
 
 .input-field:hover, .input-field:focus {
@@ -152,7 +148,7 @@
   opacity: 0.8;
 }
 
-.input-box i { /* Para Boxicons */
+.input-box i {
   position: absolute;
   top: 50%;
   left: 17px;

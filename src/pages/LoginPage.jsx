@@ -1,4 +1,3 @@
-// src/pages/LoginPage.jsx
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './LoginPage.css';
@@ -114,7 +113,7 @@ function LoginPage() {
       <div className="login-wrapper">
         <nav className="login-nav">
           <div className="login-nav-logo">
-            {/* Asegúrate que la imagen esté en la ruta correcta (ej. public/img/) */}
+            {}
             <img src="/img/PLANify with rocco white.png" alt="PLANIFY Logo" />
           </div>
           <div className="login-nav-button">
@@ -181,7 +180,7 @@ function LoginPage() {
           ) : (
             <form 
               className="register-container"
-              id="registerForm" // Añadido ID por consistencia, aunque no se usa directamente en el JS
+              id="registerForm" 
               onSubmit={handleRegisterUser}
             >
               <div className="form-top-text">
