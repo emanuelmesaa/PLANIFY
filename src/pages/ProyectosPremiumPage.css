@@ -1,0 +1,328 @@
+/* src/pages/ProyectosPremiumPage.css */
+
+.proyectos-premium-page-wrapper {
+  background-color: #f0f4f8; 
+  min-height: 100vh;
+  padding-bottom: 3rem; 
+}
+
+.proyectos-premium-content-area {
+  max-width: 1200px; 
+  margin: 0 auto;
+  padding: 2rem 1.5rem; 
+}
+
+.page-header.premium-header-fullwidth { 
+  background: var(--main-header-gradient, linear-gradient(to right, #fffb03, #95f003)); 
+  color: var(--header-text-color, #333); 
+  padding: 2.5rem 1.5rem; 
+  text-align: center;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  border-bottom: 3px solid #f59e0b; 
+  width: 100%; 
+  box-sizing: border-box; 
+}
+.page-header.premium-header-fullwidth h1 {
+  font-size: 2.3rem; 
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.page-header.premium-header-fullwidth .premium-message {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  max-width: 700px; 
+  margin: 0 auto; 
+}
+
+.form-container-premium {
+  display: flex;
+  justify-content: center; 
+  margin-bottom: 3.5rem; 
+}
+
+.content-section-premium#form-section-premium {
+  background: linear-gradient(145deg, #ffffff, #f8f9fa); 
+  padding: 2.5rem 3rem; 
+  border-radius: 16px; 
+  box-shadow: 0 10px 30px rgba(100, 100, 150, 0.12), 0 4px 8px rgba(100,100,150,0.08); 
+  width: 100%;
+  max-width: 800px; 
+  border-top: 5px solid #f59e0b; 
+}
+
+.form-header-premium {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+.form-header-premium .form-icon-premium {
+  font-size: 3rem; 
+  color: #f59e0b; 
+  display: block;
+  margin-bottom: 0.75rem;
+}
+.form-header-premium h2 {
+  font-size: 2rem; 
+  font-weight: 700;
+  color: #2c3e50; 
+  margin-bottom: 0.5rem;
+}
+.form-header-premium p {
+  font-size: 1.05rem;
+  color: #5a6f82; 
+}
+
+.project-form-premium .form-grid-premium { 
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+  gap: 2rem; 
+  margin-bottom: 2.5rem; 
+}
+
+.project-form-premium .form-field-premium label { 
+  display: block;
+  font-size: 0.95rem; 
+  font-weight: 600; 
+  color: #4a5568; 
+  margin-bottom: 0.75rem; 
+}
+
+.project-form-premium .form-field-premium input[type="text"],
+.project-form-premium .form-field-premium input[type="date"],
+.project-form-premium .form-field-premium select {
+  width: 100%;
+  padding: 0.9rem 1.1rem; 
+  border: 1px solid #d1d8e0; 
+  border-radius: 8px; 
+  font-size: 1rem;
+  background-color: #fdfdff; 
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+.project-form-premium .form-field-premium input:focus,
+.project-form-premium .form-field-premium select:focus {
+  outline: none;
+  border-color: #f59e0b; 
+  box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.25); 
+}
+.project-form-premium .form-field-premium select {
+    appearance: none; 
+}
+
+.project-form-premium .submit-button-premium, 
+.project-form-premium .cancel-edit-button-premium { 
+  width: 100%;
+  padding: 1rem 1.5rem; 
+  border: none;
+  border-radius: 8px;
+  font-size: 1.05rem; 
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease; 
+  text-transform: uppercase;
+  letter-spacing: 0.8px; 
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.project-form-premium .submit-button-premium:hover,
+.project-form-premium .cancel-edit-button-premium:hover {
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+.project-form-premium .submit-button-premium:active,
+.project-form-premium .cancel-edit-button-premium:active {
+    transform: translateY(-1px) scale(0.99);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+}
+
+.project-form-premium .submit-button-premium {
+  background: linear-gradient(to right, #f59e0b, #fbbf24); 
+  color: #422006; 
+  margin-top: 1rem; 
+}
+.project-form-premium .submit-button-premium:hover {
+  background: linear-gradient(to right, #d97706, #f59e0b);
+}
+.project-form-premium .cancel-edit-button-premium {
+  background-color: #e9ecef; 
+  color: #495057; 
+  margin-top: 0.75rem;
+  border: 1px solid #ced4da;
+}
+.project-form-premium .cancel-edit-button-premium:hover {
+  background-color: #dee2e6;
+}
+
+.content-section-premium.table-section-premium {
+  margin-top: 3.5rem; 
+}
+.table-header-premium {
+  text-align: center;
+  margin-bottom: 2rem; 
+}
+.table-header-premium h2 {
+  font-size: 2rem; 
+  font-weight: 700;
+  color: #2c3e50; 
+  margin-bottom: 0.5rem;
+}
+.table-header-premium p {
+  font-size: 1.1rem;
+  color: #5a6f82; 
+}
+
+.table-wrapper-premium { 
+    overflow-x: auto;
+    background-color: #ffffff;
+    border-radius: 12px; 
+    box-shadow: 0 8px 25px rgba(100, 100, 150, 0.1);
+    border: 1px solid #e0e6ed;
+}
+
+.projects-data-table-premium { 
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.projects-data-table-premium thead tr {
+  background: var(--main-header-gradient); 
+}
+
+.projects-data-table-premium thead th {
+  color: var(--header-text-color, #333);   
+  font-weight: 600; 
+  padding: 1rem 1.3rem; 
+  text-align: left;
+  font-size: 0.95rem; 
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  border-bottom: 2px solid rgba(0,0,0,0.1); 
+}
+
+.projects-data-table-premium td {
+  padding: 1.1rem 1.3rem; 
+  border-bottom: 1px solid #f0f4f8; 
+  font-size: 0.95rem; 
+  vertical-align: middle; 
+  color: #4a5568;
+}
+.projects-data-table-premium tr:last-child td {
+  border-bottom: none; 
+}
+.projects-data-table-premium tr:hover td { 
+    background-color: #f8faff;
+}
+
+.priority-badge-premium { 
+  padding: 0.3em 0.7em;
+  border-radius: 15px; 
+  color: white;
+  font-size: 0.75em;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.priority-alta { background-color: #e74c3c; } 
+.priority-media { background-color: #f39c12; } 
+.priority-baja { background-color: #2ecc71; } 
+
+.projects-data-table-premium ul { list-style: none; padding: 0; margin: 0; }
+.projects-data-table-premium ul li { 
+  padding: 0.5rem 0; 
+  border-bottom: 1px dashed #eee; 
+}
+.projects-data-table-premium ul li:last-child { border-bottom: none; }
+.projects-data-table-premium ul li strong { color: #34495e; }
+.projects-data-table-premium .task-details-premium span {
+    display: block;
+    font-size: 0.8em;
+    color: #7f8c8d;
+    margin-top: 2px;
+}
+.projects-data-table-premium .no-tasks-premium {
+    font-style: italic;
+    color: #95a5a6;
+}
+
+.task-actions-premium { margin-top: 0.5rem; display: flex; gap: 0.5rem; }
+.task-actions-premium button {
+  padding: 0.3rem 0.6rem;
+  font-size: 0.75rem;
+  border-radius: 4px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+.btn-task-delete { background-color: #c0392b; } 
+.btn-task-delete:hover { background-color: #a93226; }
+.btn-task-complete { background-color: #27ae60; } 
+.btn-task-complete:hover { background-color: #1e8449; }
+.btn-task-complete.completed { background-color: #7f8c8d; } 
+.btn-task-complete.completed:hover { background-color: #6c7a89; }
+
+.project-actions-cell-premium button {
+  display: block; 
+  width: 100%;
+  margin-bottom: 0.5rem;
+  padding: 0.6rem 0.8rem;
+  font-size: 0.85rem;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s, transform 0.1s ease;
+}
+.project-actions-cell-premium button:last-child { margin-bottom: 0; }
+.project-actions-cell-premium button:hover { transform: translateY(-1px); }
+
+.btn-edit-project-premium { background-color: #f39c12; } 
+.btn-edit-project-premium:hover { background-color: #e67e22; }
+.btn-delete-project-premium { background-color: #e74c3c; } 
+.btn-delete-project-premium:hover { background-color: #c0392b; }
+.btn-assign-task-premium { background-color: #3498db; } 
+.btn-assign-task-premium:hover { background-color: #2980b9; }
+
+.no-projects-message-premium {
+    text-align: center;
+    padding: 2.5rem;
+    color: #7f8c8d;
+    font-style: italic;
+    font-size: 1.1rem;
+}
+
+.task-status-badge { display: inline-block; padding: 0.2em 0.6em; font-size: 0.75em; font-weight: bold; line-height: 1; text-align: center; white-space: nowrap; vertical-align: baseline; border-radius: 0.375rem; margin-left: 0.5em; color: white; }
+.task-status-completed { background-color: #2ecc71; } 
+.task-status-in-progress { background-color: #3498db; } 
+.task-status-pending { background-color: #f1c40f; color: #333; } 
+.task-status-default { background-color: #95a5a6; } 
+
+.modal-overlay { position: fixed; inset: 0; background-color: rgba(0,0,0,0.6); display: flex; justify-content: center; align-items: center; z-index: 100;}
+.modal-content { background-color: white; padding: 1.5rem; border-radius: 8px; width: 90%; max-width: 450px; box-shadow: 0 5px 15px rgba(0,0,0,0.2);}
+.modal-content.modal-form-premium,
+.modal-content.modal-confirm-premium {
+    border-top: 5px solid #f59e0b; 
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+.modal-content h3 { font-size: 1.4rem; font-weight: 600; margin-bottom: 1rem; color: #333;}
+.modal-content.modal-form-premium h3,
+.modal-content.modal-confirm-premium h3 {
+    color: #2c3e50;
+    font-size: 1.5rem;
+}
+.modal-form-group { margin-bottom: 1rem; }
+.modal-form-group label { display: block; margin-bottom: 0.3rem; font-size: 0.9rem; color: #555; font-weight: 500;}
+.modal-input { width: 100%; padding: 0.6rem; border: 1px solid #ccc; border-radius: 4px; font-size: 0.9rem;}
+.modal-buttons { display: flex; justify-content: flex-end; gap: 0.75rem; margin-top: 1.5rem;}
+.modal-buttons button { padding: 0.6rem 1.2rem; border-radius: 5px; border: none; font-weight: 500; cursor: pointer; transition: background-color 0.2s;}
+.modal-buttons .cancel-button { background-color: #6c757d; color: white;} 
+.modal-buttons .cancel-button:hover { background-color: #5a6268;}
+.modal-buttons .confirm-button { background-color: #dc3545; color: white;} 
+.modal-buttons .confirm-button:hover { background-color: #c82333;}
+
+.assign-task-modal-content .submit-button { background-color: #0ea5e9; color: white;}
+.assign-task-modal-content .submit-button:hover { background-color: #0284c7;}
+
+.btn-modal-submit-premium { background-color: #f59e0b; color: white; }
+.btn-modal-submit-premium:hover { background-color: #d97706; }
+.btn-modal-confirm-delete-premium { background-color: #e74c3c; color: white; }
+.btn-modal-confirm-delete-premium:hover { background-color: #c0392b; }
+.btn-modal-cancel-premium { background-color: #6c757d; color: white; }
+.btn-modal-cancel-premium:hover { background-color: #5a6268; }

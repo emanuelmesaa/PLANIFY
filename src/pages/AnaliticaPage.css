@@ -1,0 +1,87 @@
+/* src/pages/AnaliticaPage.css */
+
+.analitica-page-wrapper {
+  min-height: calc(100vh - 80px); 
+}
+
+.analitica-content-container {
+  max-width: 1100px; 
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2rem 1.5rem; 
+  padding-top: 2rem;
+}
+
+.analitica-page-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.analitica-page-header h1 {
+  font-size: 2rem; 
+  color: #2c3e50; 
+  font-weight: 600;
+}
+
+.analitica-main-section > p { 
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555;
+  text-align: center;
+  margin-bottom: 2.5rem; 
+}
+
+.analytics-charts-grid {
+  display: grid;
+  gap: 2.5rem; 
+  margin-top: 2rem;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) { 
+  .analytics-charts-grid {
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); 
+  }
+}
+@media (min-width: 1024px) { 
+  .analytics-charts-grid {
+     grid-template-columns: repeat(2, 1fr); 
+  }
+}
+
+.analytics-chart-item {
+  background-color: #ffffff; 
+  padding: 1.5rem;
+  border-radius: 10px; 
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08); 
+  text-align: center; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 4px solid #95f003; 
+}
+
+.analytics-chart-item h2 {
+  font-size: 1.3rem; 
+  color: #34495e;
+  margin-bottom: 1.25rem; 
+}
+
+.analytics-image {
+  width: 100%;    
+  max-width: 600px; 
+  height: auto;   
+  border-radius: 6px; 
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  object-fit: contain; 
+  background-color: #f8f9fa; 
+  border: 1px solid #e9ecef; 
+}
+
+.chart-description {
+  font-size: 0.9rem; 
+  color: #6c757d;
+  line-height: 1.5;
+  margin-top: 0.5rem; 
+}

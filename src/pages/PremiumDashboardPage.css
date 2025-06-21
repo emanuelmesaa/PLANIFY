@@ -1,0 +1,199 @@
+/* src/pages/PremiumDashboardPage.css */
+
+.premium-dashboard-main-content {
+  padding: 2em; 
+  flex: 1; 
+}
+
+.premium-dashboard-container {
+  max-width: 1320px; 
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.5rem 1.5rem; 
+}
+
+.premium-dashboard-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  margin-top: 1rem;
+  padding: 1rem;
+}
+
+.premium-dashboard-header h1 {
+  font-size: 2.25rem; 
+  font-weight: bold;
+  color: #2c3e50; 
+  margin-bottom: 0.5rem;
+}
+
+.premium-dashboard-header p {
+  font-size: 1.15rem;
+  color: #555e68;
+}
+
+.content-section { 
+  margin-bottom: 3em;
+}
+
+.summary-cards-container-premium { 
+  display: flex;
+  justify-content: space-around; 
+  gap: 2em; 
+  flex-wrap: wrap; 
+}
+
+.summary-card-premium { 
+  background-color: #ffffff; 
+  padding: 1.75em; 
+  border-radius: var(--border-radius-default, 10px); 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08); 
+  text-align: center; 
+  min-width: 280px; 
+  flex-basis: 300px; 
+  flex-grow: 1;
+  max-width: 340px; 
+  border-left: 5px solid #95f003;
+}
+
+.summary-card-premium h2 {
+  font-size: 1.3rem; 
+  margin-bottom: 0.8em;
+  color: #34495e; 
+}
+
+.summary-card-premium p {
+  font-size: 1.8rem; 
+  font-weight: bold;
+  color: #27ae60; 
+}
+
+.projects-table-container-premium h2 { 
+  background: var(--main-header-gradient);
+  color: var(--header-text-color, #333);
+  padding: 0.75em 1em;
+  border-radius: var(--border-radius-default, 8px) var(--border-radius-default, 8px) 0 0;
+  margin-bottom: 0;
+  font-size: 1.4rem; 
+  font-weight: 600;
+}
+
+.projects-table-premium {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0; 
+  background-color: #ffffff;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: var(--border-radius-default, 8px);
+  border-bottom-right-radius: var(--border-radius-default, 8px);
+  overflow: hidden; 
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  border: 1px solid #dfe4ea; 
+  border-top: none; 
+}
+
+.projects-table-premium thead tr {
+  background: var(--main-header-gradient);
+}
+
+.projects-table-premium thead th {
+  color: var(--header-text-color, #333);   
+  font-weight: bold;
+  padding: 0.85em 1.1em; 
+  text-align: left;
+  border-bottom: 1px solid #ced4da; 
+  border-right: 1px solid rgba(0,0,0,0.07); 
+}
+.projects-table-premium thead th:last-child {
+  border-right: none; 
+}
+
+.projects-table-premium td {
+  border-bottom: 1px solid #e9ecef; 
+  border-right: 1px solid #e9ecef; 
+  padding: 0.85em 1.1em; 
+  text-align: left;
+  font-size: 0.9rem; 
+}
+.projects-table-premium td:last-child {
+  border-right: none; 
+}
+.projects-table-premium tr:last-child td {
+  border-bottom: none; 
+}
+
+.projects-table-premium td button {
+  background-color: #54a0ff; 
+  color: white;
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin-right: 6px;
+  font-size: 0.85rem;
+}
+.projects-table-premium td button:hover {
+  background-color: #2e86de;
+}
+.projects-table-premium td button.edit-button-premium {
+    background-color: #feca57; 
+    color: #333;
+}
+.projects-table-premium td button.edit-button-premium:hover {
+    background-color: #ff9f43;
+}
+
+.add-project-button-premium { 
+  margin-top: 2em;
+  padding: 0.85em 1.8em;
+  background-color: #1dd1a1; 
+  color: white; 
+  border: none;
+  border-radius: var(--border-radius-default, 8px);
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s ease;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+}
+
+.add-project-button-premium:hover {
+  background-color: #10ac84;
+  transform: translateY(-1px);
+}
+
+.premium-dashboard-footer {
+    background-color: #343a40; 
+    color: #f8f9fa; 
+    text-align: center;
+    padding: 1.5em 0;
+    font-size: 13px; 
+    margin-top: 3em; 
+}
+
+/* Estilos para el Toast de notificación Premium (si decides personalizarlo) */
+.premium-toast-notification.swal2-popup {
+  font-size: 0.95rem !important;
+  background-color: #e0f2fe !important; 
+  border-left: 5px solid #0ea5e9 !important; 
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1) !important;
+}
+.premium-toast-notification .swal2-title {
+  color: #0c4a6e !important; 
+  font-size: 1.1rem !important;
+}
+.premium-toast-notification .swal2-html-container {
+  color: #374151 !important; 
+  text-align: left !important;
+  margin-left: 0.5em !important;
+  margin-right: 0.5em !important;
+}
+.premium-toast-notification .swal2-timer-progress-bar {
+  background-color: #0ea5e9 !important; 
+}
